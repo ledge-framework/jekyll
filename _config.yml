@@ -56,3 +56,4 @@ theme: jekyll
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-readme-index
