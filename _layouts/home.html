@@ -7,14 +7,17 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <ledge content="{{ content }}"></ledge>
-
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
   {% endif %}
 
+  {{ posts.size }}
+
+  {%- if posts.size == 0 -%}
+    <ledge content="{{ content }}"></ledge>
+  {% endif %}
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
