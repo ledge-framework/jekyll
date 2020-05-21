@@ -63,8 +63,8 @@ readme_index:
   remove_originals: false
   with_frontmatter: false
 
-kramdown:
-  parse_block_html: true
-  html_to_native: true
-
 markdown: MyCustomProcessor
+highlighter: none
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
