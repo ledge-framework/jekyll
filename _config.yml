@@ -57,3 +57,8 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-readme-index
+
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
