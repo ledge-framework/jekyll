@@ -3,6 +3,13 @@ class Jekyll::Converters::Markdown::MyCustomProcessor
   end
 
   def convert(content)
-    content
+    escape_characters_in_string content
+    content = content.gsub(/\n/, "<br>")
+    %("#{content}")
+  end
+
+  def escape_characters_in_string(string)
+    pattern = /(\'|\"|\.|\*|\/|\-|\\|\)|\$|\+|\(|\^|\?|\!|\~|\`)/
+    string.gsub(pattern){|match|"\\"  + match}
   end
 end
