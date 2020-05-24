@@ -1,5 +1,7 @@
 # Ledge Jekyll Remote theme
 
+demo: [https://github.com/phodal/ledge-jekyll-demo](https://github.com/phodal/ledge-jekyll-demo)
+
 ## install
 
 1. create `_config.yml`
