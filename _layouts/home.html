@@ -13,10 +13,9 @@ layout: default
     {% assign posts = site.posts %}
   {% endif %}
 
-  {{ posts.size }}
-
   {%- if posts.size == 0 -%}
-    <ledge-theme content="{{ content }}"></ledge-theme>
+    <base href="{{page.url}}">
+    <ledge-theme content={{page.content}}></ledge-theme>
   {% endif %}
 
   {%- if posts.size > 0 -%}
