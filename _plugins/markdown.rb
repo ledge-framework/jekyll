@@ -1,3 +1,5 @@
+require 'json'
+
 class Jekyll::Converters::Markdown::MyCustomProcessor
   def initialize(config)
   end
@@ -5,7 +7,8 @@ class Jekyll::Converters::Markdown::MyCustomProcessor
   def convert(content)
     escape_characters_in_string content
     # content = content.gsub(/\n/, "\\n")
-    %("#{content}")
+    data = {:content => content}
+    data.to_json
   end
 
   def escape_characters_in_string(string)

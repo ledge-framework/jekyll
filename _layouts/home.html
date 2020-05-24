@@ -15,7 +15,14 @@ layout: default
 
   {%- if posts.size == 0 -%}
     <base href="{{page.url}}">
-    <ledge-theme content={{page.content}}></ledge-theme>
+    <div id="ledge-content"></div>
+    <script>
+      const content = document.getElementById('ledge-content');
+      const tile = document.createElement('ledge-theme');
+      tile.setAttribute('content', {{ page.content }}.content);
+
+      content.appendChild(tile);
+    </script>
   {% endif %}
 
   {%- if posts.size > 0 -%}
