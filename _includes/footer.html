@@ -34,11 +34,13 @@
 
   </div>
 
+  {% if jekyll.environment == "development" %}
 <!--  <script src="http://localhost:4200/runtime.js"></script>-->
 <!--  <script src="http://localhost:4200/polyfills.js"></script>-->
 <!--  <script src="http://localhost:4200/vendor.js"></script>-->
 <!--  <script src="http://localhost:4200/styles.js"></script>-->
 <!--  <script src="http://localhost:4200/main.js"></script>-->
+  {% endif %}
 
   <script src="https://theme.ledge.ink/runtime-es5.js"></script>
   <script src="https://theme.ledge.ink/polyfills-es5.js"></script>
