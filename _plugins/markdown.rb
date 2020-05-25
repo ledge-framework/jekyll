@@ -1,6 +1,6 @@
 require 'json'
 
-class Jekyll::Converters::Markdown::MyCustomProcessor
+class Jekyll::Converters::Markdown::LedgeProcessor
   def initialize(config)
   end
 

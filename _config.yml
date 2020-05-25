@@ -63,7 +63,7 @@ readme_index:
   remove_originals: false
   with_frontmatter: false
 
-markdown: MyCustomProcessor
+markdown: LedgeProcessor
 
 highlighter: none
 kramdown:
