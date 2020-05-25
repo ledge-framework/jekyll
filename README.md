@@ -12,4 +12,4 @@ remote_theme: ledge-framework/jekyll
 
 ## LICENSE
 
-@ 2020 Phodal Huang](https://github.com/phodal). This code is distributed under the MIT license. See `LICENSE` in this directory.
+@ 2020 [Phodal Huang](https://github.com/phodal). This code is distributed under the MIT license. See `LICENSE` in this directory.
