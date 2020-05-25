@@ -63,6 +63,8 @@ readme_index:
   remove_originals: false
   with_frontmatter: false
 
+markdown: MyCustomProcessor
+
 highlighter: none
 kramdown:
   syntax_highlighter_opts:
