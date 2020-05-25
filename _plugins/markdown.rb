@@ -5,9 +5,10 @@ class Jekyll::Converters::Markdown::LedgeProcessor
   end
 
   def convert(content)
-    escape_characters_in_string content
-    data = {:content => content}
-    data.to_json
+    # escape_characters_in_string content
+    # data = {:content => content}
+    # data.to_json
+    content
   end
 
   def escape_characters_in_string(string)
