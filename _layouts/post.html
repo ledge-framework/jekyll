@@ -29,9 +29,10 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     <div id="ledge-content"></div>
     <script>
-      const content = document.getElementById('ledge-content');
-      const tile = document.createElement('ledge-theme');
-      tile.setAttribute('content', {{ page.content | encode }}.content);
+      var content = document.getElementById('ledge-content');
+      var tile = document.createElement('ledge-theme');
+      var text = "{{ page.content | uri_escape }}"
+      tile.setAttribute('content', decodeURIComponent(text));
 
       content.appendChild(tile);
     </script>

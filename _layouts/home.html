@@ -19,7 +19,7 @@ layout: default
     <script>
       const content = document.getElementById('ledge-content');
       const tile = document.createElement('ledge-theme');
-      tile.setAttribute('content', {{ page.content | json }});
+      tile.setAttribute('content', "{{ page.content | xml_escape }}");
 
       content.appendChild(tile);
     </script>
